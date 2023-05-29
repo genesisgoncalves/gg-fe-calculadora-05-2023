@@ -1,6 +1,7 @@
 let temporal = 0;
 let operacion = '';
 var input = document.getElementById('input');
+let memory = 0;
 
 function add(num) {
     if (num == 0) {
@@ -61,8 +62,6 @@ function cleanInput() {
     }
 }
 
-let memory = input.value
-
 function memoryClear() {
     memory = 0;
 }
@@ -76,5 +75,5 @@ function memoryRest() {
 }
 
 function memoryRead() {
-    memory = memory;
+    input.value = memory;
 }
